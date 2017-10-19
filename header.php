@@ -253,7 +253,7 @@ if(isset($_SESSION['user_id'])) {
     </li> 
            <!--<li><a href="vat.php"><i class="fa fa-tag" aria-hidden="true"></i><span>VAT</span></a></li>
            <li><a href="exchange.php"><i class="fa fa-recycle" aria-hidden="true"></i><span>Exchange (អត្រាប្តូរប្រាក់)</span></a></li>-->
-          <li><a href="stockin.php">Monthly Stockin</a></li>
+          <li><a href="monthly_stockin.php">Monthly Stockin</a></li>
           <li><a href="stockout.php">Monthly Stockout</a></li>
           <li><a href="stockout.php">Branch Stockout</a></li>
           <li><a href="stock_balance.php">Stock Balance</a></li>
