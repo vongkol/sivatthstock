@@ -260,7 +260,9 @@
 					<td colspan="2" align="center">អនុម័តដោយ/Approved By:</td>
 				</tr>
 				<tr>
-					<td colspan="2" height="50px" align="center"></td>
+					<td colspan="2" height="50px" align="center">
+						<img src="img/sign/sign.png" class="img-responsive">
+					</td>
 				</tr>
 				<tr>
 					<td colspan="2" align="center">Finance Department <br><br></td>

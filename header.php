@@ -248,6 +248,7 @@ if(isset($_SESSION['user_id'])) {
       <ul class="treeview-menu">
         <li><a href="stockin_record.php"><i class="fa fa-check" aria-hidden="true"></i>Adjustment + (បន្ថែម)</a></li>
         <li><a href="stockout_record.php"><i class="fa fa-check" aria-hidden="true"></i>Adjustment - (ដក)</a></li>
+        <li><a href="sign_image.php"><i class="fa fa-check" aria-hidden="true"></i>Sign Image</a></li>
       </ul>
     </li> 
            <!--<li><a href="vat.php"><i class="fa fa-tag" aria-hidden="true"></i><span>VAT</span></a></li>
