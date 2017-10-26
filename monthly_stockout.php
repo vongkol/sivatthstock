@@ -45,7 +45,7 @@ if(empty($_SESSION['user_id'])) {
                           </div>
                         </div>  
                         <div class="table-responsive">
-                            <table border="1" id="example" class="display nowrap table table-border" width="100%" cellspacing="0">
+                            <table id="example" class="display nowrap" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
@@ -90,9 +90,6 @@ if(empty($_SESSION['user_id'])) {
               var getStartdate = $('#startDate').val();
               var getEnddate = $('#endDate').val();
               var getItem = $('#itemname').val();
-              var totalAmount = 0;
-              var totalPayAmount = 0;
-              var totalRest = 0;
               oTable.fnClearTable();
               $.ajax({
                 url: 'getmonthly_stockin_report.php',
@@ -104,12 +101,10 @@ if(empty($_SESSION['user_id'])) {
                 dataType: 'json',
                 type: 'get',
                 success: function(s){
-                  // alert(s);
+                  alert(s);
                 console.log(s);   
                         for(var i = 0; i < s.length; i++) {
-                                    totalAmount = totalAmount += parseFloat(s[i][7]);
-                                    totalPayAmount = totalPayAmount += parseFloat(s[i][8]);
-                                    totalRest = totalRest += parseFloat(s[i][9]);
+                                    
                                    oTable.fnAddData([
                                               s[i][0],
                                               s[i][1],
@@ -127,8 +122,6 @@ if(empty($_SESSION['user_id'])) {
                                               s[i][13]]);               
                                     oTable.addClass('new');                                    
                               } // End For
-                               oTable.fnAddData(["x","x", "x","x","x","x","x","Total Amount= "+totalAmount,"Total PayAmount= "+totalPayAmount,"Total="+totalRest,"x","x","x","x"]);
-                             $( "tr:last" ).css({ backgroundColor: "yellow", fontWeight: "bolder" });
                 }
               });
             });

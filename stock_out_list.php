@@ -49,6 +49,7 @@ if($id < 0 )
                                             <th>យកពីឃ្លាំង<br>Form Where</th>
                                             <th>លេខកាត/ID Card</th>
                                             <th>Detail</th>
+                                            <th>Print</th>
                                             <th>Status</th>
                                             <th>Delete</th>
                                             
@@ -84,6 +85,7 @@ if($id < 0 )
                                             <td><?php echo $v7;?></td>
                                             <td><?php echo $v8;?></td>
                                             <th><?php echo "<a class='btn btn-info colorbox' href='stock_out_detail.php?in_no=".$row['sto_out_id']."'>Detail</a>"?></th>
+                                            <th><?php echo "<a class='btn btn-primary colorbox' href='print_invoice.php?in_no=".$row['sto_out_id']."'><span class='glyphicon glyphicon-print'></span></a>"?></th>
                                             <td><span class="label label-success">Approved <i class="fa fa-check-square" aria-hidden="true"></span></i></td>
                                             <td>
                                             <?php
